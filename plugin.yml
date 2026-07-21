@@ -1,6 +1,6 @@
 name: VanillaHead
-version: '1.0'
-main: com.example.vanillahead.VanillaHead
+version: '1.0.0'
+main: ru.servernablydate1.vanillahead.VanillaHead  # <-- замени на свой пакет и класс!
 api-version: '1.20'
-authors: [You]
-description: A simple plugin for Minecraft.
+authors: [servernablydate1]
+description: Plugin for VanillaHead
