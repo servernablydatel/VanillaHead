@@ -1,0 +1,6 @@
+name: VanillaHead
+version: '1.0.0'
+main: ru.servernablydate1.vanillahead.VanillaHead  # <-- проверь, что пакет совпадает с твоим Java-классом
+api-version: '1.20'
+authors: [servernablydate1]
+description: Plugin for VanillaHead
