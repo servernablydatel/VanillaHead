@@ -12,6 +12,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Явно задаём версию Java для удобства, но главный контроль будет в плагине -->
+        <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
     <repositories>
@@ -26,13 +28,7 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.20.4-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-
+        <!-- ОСТАВЛЯЕМ ТОЛЬКО PAPER API -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
@@ -50,7 +46,15 @@
 
     <build>
         <plugins>
-            <!-- Плагин maven-compiler-plugin удалён: версию Java задаёт GitHub Actions -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <!-- ГЛАВНОЕ ИСПРАВЛЕНИЕ: явно указываем релиз Java 17 -->
+                    <release>17</release>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
