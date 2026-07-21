@@ -1,6 +1,0 @@
-name: VanillaHead
-version: '1.0.0'
-main: ru.servernablydate1.vanillahead.VanillaHead  # <-- замени на свой пакет и класс!
-api-version: '1.20'
-authors: [servernablydate1]
-description: Plugin for VanillaHead
