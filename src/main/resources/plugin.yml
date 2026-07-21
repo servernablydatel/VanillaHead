@@ -1,6 +1,12 @@
 name: VanillaHead
 version: '1.0.0'
-main: com.example.vanillahead.VanillaHead  # <-- проверь, что пакет совпадает с твоим Java-классом
+main: com.example.vanillahead.VanillaHead
 api-version: '1.20'
 authors: [servernablydate1]
 description: Plugin for VanillaHead
+
+commands:
+  vanillahead:
+    description: Main command for VanillaHead
+    usage: /<command>
+    permission: vanillahead.use
